@@ -188,6 +188,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -199,32 +200,36 @@ whitelist:
 
 
 # Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
+# - Minimal Mistakes config
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+# category_archive: # Disabled for now; don't think I need categories.
+#   type: jekyll-archives
+#   path: /categories/
+
+# - jekyll-archives config
+jekyll-archives:
+  enabled:
+    # - categories
+    - tags
+    - year
+    - month
+    - day
+
+  layouts:
+    # category: archive-taxonomy
+    tag: archive-taxonomy
+    year: archive-taxonomy
+    month: archive-taxonomy
+    day: archive-taxonomy
+
+  permalinks:
+    # category: /categories/:name/
+    tag: /tags/:name/
+    year: /:year/
+    month: /:year/:month/
+    day: /:year/:month/:day/
 
 
 # HTML Compression
