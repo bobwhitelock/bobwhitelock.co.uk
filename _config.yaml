@@ -7,17 +7,18 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Bob Whitelock"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Bob Whitelock"
+description              : ""
 theme: minimal-mistakes-jekyll
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://bobwhitelock.co.uk"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "bobwhitelock/bobwhitelock.co.uk"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+# breadcrumbs            : false # true, false (default) # XXX Consider enabling.
+# words_per_minute         : 200
+# XXX Set up comments.
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -77,10 +78,11 @@ analytics:
 
 
 # Site Author
+# XXX Need to enable all `author_profile` toggles once this is set up.
 author:
-  name             : "Your Name"
+  name             : "Bob Whitelock"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "I do stuff and things"
   location         : "Somewhere"
   email            :
   uri              :
@@ -173,9 +175,9 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+permalink: /:year/:month/:day/:title/
+paginate: 10 # amount of posts to show
+paginate_path: /page:num/ # XXX What format?
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -241,8 +243,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+      author_profile: false
+      read_time: false
+      comments: true
+      share: false
+      related: false
