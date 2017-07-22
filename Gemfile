@@ -1,7 +1,9 @@
 source "https://rubygems.org"
 
 gem "jekyll", "3.5.0"
-gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll",
+   git: "https://github.com/mmistakes/minimal-mistakes.git",
+   branch: "susy-3-upgrade"
 
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
