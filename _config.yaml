@@ -12,7 +12,8 @@ title_separator          : "-"
 name                     : "Bob Whitelock"
 description              : ""
 theme: minimal-mistakes-jekyll
-url                      : "https://bobwhitelock.co.uk"
+# `url` commented for now so relative URLs used.
+url                      : #"http://bobwhitelock.co.uk"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "bobwhitelock/bobwhitelock.co.uk"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
