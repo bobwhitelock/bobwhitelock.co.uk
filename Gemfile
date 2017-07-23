@@ -2,8 +2,8 @@ source "https://rubygems.org"
 
 gem "jekyll", "3.5.0"
 gem "minimal-mistakes-jekyll",
-   git: "https://github.com/mmistakes/minimal-mistakes.git",
-   branch: "susy-3-upgrade"
+   git: "https://github.com/bobwhitelock/minimal-mistakes.git",
+   branch: "staticman-v2-comments"
 
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
