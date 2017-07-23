@@ -81,13 +81,12 @@ analytics:
 
 
 # Site Author
-# XXX Need to enable all `author_profile` toggles once this is set up.
 author:
   name             : "Bob Whitelock"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I do stuff and things"
-  location         : "Somewhere"
-  email            :
+  bio              : #"I do stuff and things"
+  location         : '{Oxford,Wilt}shire'
+  email            : 'bob.whitelock1@gmail.com'
   uri              :
   bitbucket        :
   codepen          :
@@ -95,7 +94,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : 'bobwhitelock'
   gitlab           :
   google_plus      :
   keybase          :
@@ -107,7 +106,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : 'bobwhitelock'
   vine             :
   weibo            :
   xing             :
@@ -249,7 +248,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: true
       share: false
@@ -261,4 +260,4 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: false
+      author_profile: true
