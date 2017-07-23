@@ -18,6 +18,9 @@ repository               : "bobwhitelock/bobwhitelock.co.uk"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default) # XXX Consider enabling.
 # words_per_minute         : 200
+
+# Comments settings are not used for now as using forked theme to use Staticman
+# V2; only settings needed for comments to show are set here.
 comments:
   provider               : "staticman"
   # disqus:
@@ -30,21 +33,22 @@ comments:
   #   num_posts            : # 5 (default)
   #   colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
+  # allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
-  commitMessage          : "Add new comment"
-  filename               : "{@timestamp}"
-  format                 : "yml"
-  moderation             : false
-  path                   : "/_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  # commitMessage          : "Add new comment"
+  # filename               : "{@timestamp}"
+  # format                 : "yml"
+  # moderation             : false
+  # path                   : "/_data/comments/{options.slug}"
+  # requiredFields         : ['name', 'email', 'message']
+  # transforms:
+  #   email                : "md5"
+  # generatedFields:
+  #   date:
+  #     type               : "date"
+  #     options:
+  #       format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
@@ -140,6 +144,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - staticman.yml
 keep_files:
   - .git
   - .svn
