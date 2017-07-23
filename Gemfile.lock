@@ -1,7 +1,7 @@
 GIT
-  remote: https://github.com/mmistakes/minimal-mistakes.git
-  revision: 387f8149d6270b876f224a57a07062ffb0647938
-  branch: susy-3-upgrade
+  remote: https://github.com/bobwhitelock/minimal-mistakes.git
+  revision: 35dd7b35a1375c4761f3b0b1378d33e859dc8b8f
+  branch: staticman-v2-comments
   specs:
     minimal-mistakes-jekyll (4.4.2)
       jekyll (~> 3.4)
