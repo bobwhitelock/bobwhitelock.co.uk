@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "3.5.0"
+gem "jekyll", "3.6.3"
 gem "minimal-mistakes-jekyll",
    git: "https://github.com/bobwhitelock/minimal-mistakes.git",
    branch: "staticman-v2-comments"
